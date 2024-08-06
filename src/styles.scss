@@ -3,6 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Poppins, "Helvetica Neue", sans-serif; }
 
+
 // Sizes
 .full-width {
     width: 100%;
@@ -33,6 +34,11 @@ body { margin: 0; font-family: Poppins, "Helvetica Neue", sans-serif; }
 .center-center {
     justify-content: center;
     align-items: center;
+}
+
+.end {
+    justify-content: end;
+    align-items: end;
 }
 
 .space-between-center {
@@ -96,6 +102,34 @@ body { margin: 0; font-family: Poppins, "Helvetica Neue", sans-serif; }
     position: absolute;
 }
 
+.top-0p {
+    top: 0;
+}
+
+.top-10p {
+    top: 10%;
+}
+
+.left-0p {
+    left: 0;
+}
+
+.right-0p {
+    right: 0;
+}
+
+.bottom-10p {
+    bottom: 10%;
+}
+
+.bottom-0p {
+    bottom: 0;
+}
+
+.bottom-10p {
+    bottom: 10%;
+}
+
 // cursor 
 .pointer {
     cursor: pointer;
@@ -110,6 +144,10 @@ body { margin: 0; font-family: Poppins, "Helvetica Neue", sans-serif; }
     border-radius: 20px;
 }
 
+.border-radius-50px {
+    border-radius: 50px;
+}
+
 .round {
     border-radius: 50%;
 }
@@ -118,7 +156,13 @@ body { margin: 0; font-family: Poppins, "Helvetica Neue", sans-serif; }
     box-sizing: border-box;
 }
 
+// Colors
 
+.green-bg {
+    background-color: green;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.white {
+    color: white;
+}
+

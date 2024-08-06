@@ -1,0 +1,38 @@
+<div class="full-width full-height padding-10px border-box relative">
+  <google-map 
+    height="400px"
+    width="100%"
+    *ngIf = "center"
+    [center]="center"
+    [zoom]="zoom"
+    (mapClick)="moveMap($event)"
+    (mapMousemove)="move($event)" 
+    (mapClick)="addMarker($event)">
+    
+    <map-marker *ngFor="let position of markerPositions" 
+                [position]="position" 
+                [options]="markerOptions">
+    </map-marker>
+
+    <map-marker *ngFor="let position of markerPositions2" 
+                [position]="position" 
+                [options]="markerOptions2">
+    </map-marker>
+    
+  </google-map>
+  
+  <mat-toolbar class="flex space-between-center absolute bottom-0p left-0p right-0p">
+    <button mat-icon-button matTooltip="Home" routerLink="/register">
+      <mat-icon >home</mat-icon>
+    </button>
+    <button mat-icon-button matTooltip="Explore">
+      <mat-icon>explore</mat-icon>
+    </button>
+    <button mat-icon-button matTooltip="Chat" routerLink="/register">
+      <mat-icon>chat</mat-icon>
+    </button>
+    <button mat-icon-button matTooltip="My Profile" routerLink="/register">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  </mat-toolbar>
+</div>
